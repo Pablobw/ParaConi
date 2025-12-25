@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Para Mi Bebi ❤️🎄</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pantalla de acceso con contraseña -->
+    <div class="password-screen" id="passwordScreen">
+        <div class="password-container">
+            <div class="password-content">
+                <div class="lock-icon">🔒</div>
+                <h2 class="password-title">Acceso Especial</h2>
+                <p class="password-subtitle">Esta página es solo para ti, mi bebi</p>
+                <form class="password-form" id="passwordForm">
+                    <input 
+                        type="password" 
+                        id="passwordInput" 
+                        class="password-input" 
+                        placeholder="Ingresa la clave especial..."
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" class="password-button">
+                        <span>Entrar</span>
+                        <span class="button-icon">✨</span>
+                    </button>
+                </form>
+                <p class="password-hint" id="passwordHint"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal (oculto hasta ingresar contraseña) -->
+    <div class="main-content" id="mainContent" style="display: none;">
+    <!-- Efecto de nieve navideña -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+    </div>
+    
+    <!-- Efecto de luces navideñas flotantes -->
+    <div class="christmas-lights-bg" aria-hidden="true">
+        <span class="light light-red"></span>
+        <span class="light light-green"></span>
+        <span class="light light-gold"></span>
+        <span class="light light-red"></span>
+        <span class="light light-green"></span>
+        <span class="light light-gold"></span>
+        <span class="light light-red"></span>
+        <span class="light light-green"></span>
+    </div>
+
+    <!-- Header romántico -->
+    <header class="hero-section">
+        <div class="christmas-lights">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hero-content">
+            <h1 class="main-title">
+                <span class="title-line">Para Mi</span>
+                <span class="title-name">Bebi</span>
+                <span class="title-hearts">❤️ 🎄 ❤️</span>
+            </h1>
+            <p class="subtitle">Cada momento contigo es mágico</p>
+            <div class="bowie-hero">
+                <span class="bowie-emoji">🐕</span>
+                <span class="bowie-name">Con Bowie</span>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secciones de fotos - Se generan dinámicamente desde config.js -->
+    <div id="photoSections"></div>
+
+    <!-- Sección de regalos -->
+    <section class="gifts-section" id="regalos">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🎁</span>
+                Tu Regalo Especial
+                <span class="title-icon">🎁</span>
+            </h2>
+            <p class="gifts-intro">Haz clic en el regalo para descubrir tu sorpresa</p>
+            
+            <div class="gifts-container">
+                <div class="gift-box" id="gift1">
+                    <div class="gift-box-inner">
+                        <div class="gift-ribbon">
+                            <div class="ribbon-bow"></div>
+                        </div>
+                        <div class="gift-lid"></div>
+                        <div class="gift-body">
+                            <span class="gift-icon">🎁</span>
+                        </div>
+                        <div class="gift-sparkles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="gift-expanded-content">
+                        <button class="close-gift-btn">&times;</button>
+                        <div class="gift-content-icon">🎁</div>
+                        <h3 class="gift-content-title">¡Tu Regalo Especial!</h3>
+                        <div class="gift-content-details" id="giftDetails1">
+                            <p class="gift-message">Aquí aparecerá la descripción de tu regalo</p>
+                        </div>
+                        <div class="gift-content-sparkles">
+                            <span>✨</span>
+                            <span>✨</span>
+                            <span>✨</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gift-box" id="gift2">
+                    <div class="gift-box-inner">
+                        <div class="gift-ribbon">
+                            <div class="ribbon-bow"></div>
+                        </div>
+                        <div class="gift-lid"></div>
+                        <div class="gift-body">
+                            <span class="gift-icon">✈️</span>
+                        </div>
+                        <div class="gift-sparkles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="gift-expanded-content">
+                        <button class="close-gift-btn">&times;</button>
+                        <div class="gift-content-icon">✈️</div>
+                        <h3 class="gift-content-title">¡Nuestro Viaje Especial!</h3>
+                        <div class="gift-content-details" id="giftDetails2">
+                            <p class="gift-message">Aquí aparecerá la descripción de tu regalo</p>
+                        </div>
+                        <div class="gift-content-sparkles">
+                            <span>✨</span>
+                            <span>✨</span>
+                            <span>✨</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer romántico -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Hecho con ❤️ para mi bebi</p>
+            <p class="footer-date">Navidad 2025</p>
+        </div>
+    </footer>
+
+    </div> <!-- Fin de main-content -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
